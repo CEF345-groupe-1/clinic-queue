@@ -10,3 +10,4 @@ CEF 345 Software Development Tools, Group 1.
 | Name | Matricule | Role | GitHub username |
 |------|-----------|------|-----------------|
 | Loic Houchi | FE26A765 | Project management (Lead) | loic-houchi |
+NYIETALEM FONYI 
