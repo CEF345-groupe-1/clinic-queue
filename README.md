@@ -11,3 +11,4 @@ CEF 345 Software Development Tools, Group 1.
 |------|-----------|------|-----------------|
 | Loic Houchi | FE26A765 | Project management (Lead) | loic-houchi |
 | Ndohtabi Elizabeth Favour | FE26A751 | Project management | Favour209 |
+| Ajonin Njeatih Enjenywei | FE26A741 | Design(Lead) | ProlificNate | 
