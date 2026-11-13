@@ -1,0 +1,206 @@
+<mxfile host="65bd71144e">
+    <diagram id="LSXbdjr3A8gAyy9GG0I1" name="Page-1">
+        <mxGraphModel dx="1795" dy="1047" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="receptionist" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Receptionist" vertex="1">
+                    <mxGeometry height="370" width="150" x="30" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="doctor" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Doctor" vertex="1">
+                    <mxGeometry height="60" width="150" x="30" y="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="owner" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Clinic owner" vertex="1">
+                    <mxGeometry height="60" width="150" x="1720" y="235" as="geometry"/>
+                </mxCell>
+                <mxCell id="display" parent="1" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Waiting-room display" vertex="1">
+                    <mxGeometry height="60" width="200" x="760" y="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="p1" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="1.0&lt;br&gt;Authenticate user" vertex="1">
+                    <mxGeometry height="90" width="200" x="400" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="2.0&lt;br&gt;Register and find patient" vertex="1">
+                    <mxGeometry height="90" width="200" x="400" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="p3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="3.0&lt;br&gt;Manage appointments" vertex="1">
+                    <mxGeometry height="90" width="200" x="760" y="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="p4" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="4.0&lt;br&gt;Manage queue and consultations" vertex="1">
+                    <mxGeometry height="90" width="200" x="760" y="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="p5" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="5.0&lt;br&gt;Manage doctors and users" vertex="1">
+                    <mxGeometry height="90" width="200" x="1380" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="p6" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="6.0&lt;br&gt;Generate daily report" vertex="1">
+                    <mxGeometry height="90" width="200" x="1380" y="340" as="geometry"/>
+                </mxCell>
+                <mxCell id="d1" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="D1&lt;br&gt;Users and doctor schedules" vertex="1">
+                    <mxGeometry height="70" width="200" x="760" y="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="d2" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="D2&lt;br&gt;Patient records" vertex="1">
+                    <mxGeometry height="70" width="200" x="400" y="380" as="geometry"/>
+                </mxCell>
+                <mxCell id="d3" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="D3&lt;br&gt;Appointments" vertex="1">
+                    <mxGeometry height="70" width="160" x="1090" y="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="d5" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="D5&lt;br&gt;Audit log" vertex="1">
+                    <mxGeometry height="64" width="160" x="1090" y="395" as="geometry"/>
+                </mxCell>
+                <mxCell id="d4" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="D4&lt;br&gt;Queue entries and consultation times" vertex="1">
+                    <mxGeometry height="70" width="160" x="1090" y="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" edge="1" parent="1" source="receptionist" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.8;exitY=0;entryX=0;entryY=0.5;" target="p1" value="Username and password">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="150" y="85"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f2" edge="1" parent="1" source="receptionist" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;verticalAlign=bottom;exitPerimeter=0;entryPerimeter=0;exitX=1;exitY=0.3335;entryX=0.017;entryY=0.371;" target="p2" value="Patient search and details">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f5" edge="1" parent="1" source="p2" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;verticalAlign=top;exitPerimeter=0;entryPerimeter=0;exitX=0.017;exitY=0.629;entryX=1;entryY=0.3962;" target="receptionist" value="Patient search result and confirmation">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f3" edge="1" parent="1" source="receptionist" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=1;exitY=0.054;entryX=0.017;entryY=0.371;" target="p3" value="Appointment details, cancel or attendance action">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="740" y="170"/>
+                            <mxPoint x="740" y="273.4"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f6" edge="1" parent="1" source="p3" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.017;exitY=0.629;entryX=1;entryY=0.162;" target="receptionist" value="Availability and appointment result">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="720" y="296.6"/>
+                            <mxPoint x="720" y="210"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f4" edge="1" parent="1" source="receptionist" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=1;exitY=0.865;entryX=0.067;entryY=0.25;" target="p4" value="Walk-in and queue updates">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="700" y="470"/>
+                            <mxPoint x="700" y="522.5"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f7" edge="1" parent="1" source="p4" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.017;exitY=0.371;entryX=1;entryY=0.959;" target="receptionist" value="Queue position and status">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="680" y="533.4"/>
+                            <mxPoint x="680" y="505"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f8" edge="1" parent="1" source="doctor" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0;exitY=0.5;entryX=0.5;entryY=0;" target="p1" value="Login details">
+                    <mxGeometry relative="1" x="0.518" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="8" y="600"/>
+                            <mxPoint x="8" y="15"/>
+                            <mxPoint x="500" y="15"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f9" edge="1" parent="1" source="doctor" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=1;exitY=0.217;entryX=0.017;entryY=0.629;" target="p4" value="Call next and finish consultation">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="700" y="583"/>
+                            <mxPoint x="700" y="556.6"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f10" edge="1" parent="1" source="p4" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.067;exitY=0.75;entryX=1;entryY=0.617;" target="doctor" value="Doctor queue and patient status">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="720" y="567.5"/>
+                            <mxPoint x="720" y="607"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f11" edge="1" parent="1" source="owner" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=0;entryX=1;entryY=0.5;" target="p5" value="Doctor and user&lt;br&gt;management request">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1795" y="85"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f12" edge="1" parent="1" source="owner" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.2;exitY=1;entryX=0.983;entryY=0.371;" target="p6" value="Daily report request">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1750" y="373.4"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f13" edge="1" parent="1" source="p6" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.983;exitY=0.629;entryX=0.8;entryY=1;" target="owner" value="Daily report">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1840" y="396.6"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f14" edge="1" parent="1" source="p4" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="display" value="Called and next positions">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f15" edge="1" parent="1" source="d1" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="p1" value="Read user credentials">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f16" edge="1" parent="1" source="d1" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="p3" value="Doctor schedules">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f17" edge="1" parent="1" source="p5" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="d1" value="Updated doctor/user details">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f18" edge="1" parent="1" source="p2" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;align=right;exitPerimeter=0;entryPerimeter=0;exitX=0.371;exitY=0.983;entryX=0.371;entryY=0;" target="d2" value="Find or save patient">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f19" edge="1" parent="1" source="d2" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;align=left;exitPerimeter=0;entryPerimeter=0;exitX=0.629;exitY=0;entryX=0.629;entryY=0.983;" target="p2" value="Patient details">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f20" edge="1" parent="1" source="p3" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;verticalAlign=bottom;exitPerimeter=0;entryPerimeter=0;exitX=0.983;exitY=0.371;entryX=0;entryY=0.334;" target="d3" value="Save or update&lt;br&gt;appointment">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f21" edge="1" parent="1" source="d3" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;verticalAlign=top;exitPerimeter=0;entryPerimeter=0;exitX=0;exitY=0.666;entryX=0.983;entryY=0.629;" target="p3" value="Existing appointments&lt;br&gt;and outcomes">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f22" edge="1" parent="1" source="p4" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;verticalAlign=bottom;exitPerimeter=0;entryPerimeter=0;exitX=0.983;exitY=0.371;entryX=0;entryY=0.334;" target="d4" value="Save queue entry and&lt;br&gt;consultation times">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f23" edge="1" parent="1" source="d4" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;verticalAlign=top;exitPerimeter=0;entryPerimeter=0;exitX=0;exitY=0.666;entryX=0.983;entryY=0.629;" target="p4" value="Current queue entries">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f24" edge="1" parent="1" source="d3" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=1;exitY=0.5;entryX=0.017;entryY=0.371;" target="p6" value="Appointment&lt;br&gt;counts and statuses">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1300" y="285"/>
+                            <mxPoint x="1300" y="373.4"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f25" edge="1" parent="1" source="d4" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=1;exitY=0.5;entryX=0.017;entryY=0.629;" target="p6" value="Arrival, start and&lt;br&gt;end times">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1340" y="545"/>
+                            <mxPoint x="1340" y="396.6"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f26" edge="1" parent="1" source="p3" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.821;exitY=0.883;entryX=0;entryY=0.234;" target="d5" value="Appointment changes">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="924.2" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="f27" edge="1" parent="1" source="p4" style="rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=#FFFFFF;exitPerimeter=0;entryPerimeter=0;exitX=0.821;exitY=0.117;entryX=0;entryY=0.703;" target="d5" value="Queue changes">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="924.2" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
