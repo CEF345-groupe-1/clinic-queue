@@ -1,0 +1,94 @@
+<mxfile host="65bd71144e">
+    <diagram id="msY1PX_NANgnPxYOOSpv" name="Page-1">
+        <mxGraphModel dx="1720" dy="1256" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="systemLane" parent="1" style="swimlane;horizontal=0;startSize=30;html=1;whiteSpace=wrap;fillColor=#FFFFFF;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontStyle=1;fontSize=13;" value="Add Walk-in to Queue" vertex="1">
+                    <mxGeometry height="1030" width="640" x="40" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="start" parent="systemLane" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="315" y="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="login" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Log in" vertex="1">
+                    <mxGeometry height="50" width="170" x="245" y="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="openWalkin" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Open walk-in" vertex="1">
+                    <mxGeometry height="50" width="170" x="245" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="search" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Search for patient" vertex="1">
+                    <mxGeometry height="50" width="170" x="245" y="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="foundDecision" parent="systemLane" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Patient found?" vertex="1">
+                    <mxGeometry height="90" width="150" x="255" y="315" as="geometry"/>
+                </mxCell>
+                <mxCell id="register" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Register patient" vertex="1">
+                    <mxGeometry height="50" width="150" x="40" y="335" as="geometry"/>
+                </mxCell>
+                <mxCell id="selectDoctor" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Select doctor" vertex="1">
+                    <mxGeometry height="50" width="170" x="245" y="450" as="geometry"/>
+                </mxCell>
+                <mxCell id="duplicateDecision" parent="systemLane" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Patient already in this queue?" vertex="1">
+                    <mxGeometry height="100" width="170" x="245" y="535" as="geometry"/>
+                </mxCell>
+                <mxCell id="showCurrent" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Show current position" vertex="1">
+                    <mxGeometry height="50" width="150" x="475" y="560" as="geometry"/>
+                </mxCell>
+                <mxCell id="addQueue" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Add patient to end of doctor&#39;s queue" vertex="1">
+                    <mxGeometry height="60" width="170" x="245" y="680" as="geometry"/>
+                </mxCell>
+                <mxCell id="record" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Record arrival time, queue position and acting user" vertex="1">
+                    <mxGeometry height="60" width="170" x="245" y="775" as="geometry"/>
+                </mxCell>
+                <mxCell id="showPosition" parent="systemLane" style="rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=12;" value="Show queue position" vertex="1">
+                    <mxGeometry height="50" width="170" x="245" y="870" as="geometry"/>
+                </mxCell>
+                <mxCell id="endNode" parent="systemLane" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="315" y="960" as="geometry"/>
+                </mxCell>
+                <mxCell id="f1" edge="1" parent="systemLane" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="login">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f2" edge="1" parent="systemLane" source="login" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="openWalkin">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f3" edge="1" parent="systemLane" source="openWalkin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="search">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f4" edge="1" parent="systemLane" source="search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="foundDecision">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f5" edge="1" parent="systemLane" source="foundDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="register" value="No">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f6" edge="1" parent="systemLane" source="foundDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;" target="selectDoctor" value="Yes">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f7" edge="1" parent="systemLane" source="register" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="selectDoctor">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f8" edge="1" parent="systemLane" source="selectDoctor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="duplicateDecision">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f9" edge="1" parent="systemLane" source="duplicateDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="showCurrent" value="Yes">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f10" edge="1" parent="systemLane" source="duplicateDecision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;" target="addQueue" value="No">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f11" edge="1" parent="systemLane" source="addQueue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="record">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f12" edge="1" parent="systemLane" source="record" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="showPosition">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f13" edge="1" parent="systemLane" source="showPosition" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;" target="endNode">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="f14" edge="1" parent="systemLane" source="showCurrent" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;strokeColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="endNode">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
