@@ -103,7 +103,7 @@ The Problem column refers to the numbered problems of the problem statement.
 
 ## 5. Use case diagram and use case descriptions
 
-![Use case diagram](diagrams/usecases.drawio.svg)
+![Use case diagram](diagrams/images/Use_case.drawio.svg)
 
 ### UC-01 Book an appointment
 
