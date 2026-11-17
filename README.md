@@ -16,4 +16,5 @@ CEF 345 Software Development Tools, Group 1.
 | Acha George Fuamazeh | FE26A738 | Release & Documentation | Fuamazeh |
 | Sepo Perry-Bradley Dinga | FE26A763 | Testing & QA (Lead) | Perry-Bradley |
 | Nadine Abla Ejoh | FE26A749 |Release & Documentation (Lead) | Nadineabla |
+| Lacmago Magniapi Rebecca | FE26A747| Testing & QA | LACMAGO05 |
 
